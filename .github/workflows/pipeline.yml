@@ -20,12 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd deber3api
           npm install
 
       - name: Build the static site
         run: |
-          cd deber3api
           npm run build
   deploy:
             needs: [build]
